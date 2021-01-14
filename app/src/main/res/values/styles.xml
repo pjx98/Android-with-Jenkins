@@ -1,0 +1,116 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@color/white</item>
+        <item name="fontFamily">@font/ruluko</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:windowAnimationStyle">@style/animation_sliding_left</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="animation_sliding_left" parent="android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <style name="Text_Brown">
+        <item name="android:textColor">@color/brown</item>
+        <item name="android:layout_marginHorizontal">16dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Text">
+        <item name="android:layout_marginHorizontal">16dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextCapsBold">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginHorizontal">16dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="toolbar">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:paddingHorizontal">5dp</item>
+
+    </style>
+
+    <style name="app_logo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/logo_1</item>
+        <item name="android:scaleX">1.5</item>
+        <item name="android:scaleY">1.5</item>
+    </style>
+
+    <style name="edit_text">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ems">10</item>
+        <item name="android:background">@drawable/edit_text_background</item>
+        <item name="android:paddingHorizontal">8dp</item>
+        <item name="android:layout_marginHorizontal">16dp</item>
+    </style>
+
+    <style name="button">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:textColor">@color/brown</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="recyclerView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@drawable/card_background</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:scaleX">1.05</item>
+        <item name="layout_constraintHeight_percent">0.38</item>
+    </style>
+
+    <style name="cardView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@drawable/card_background</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingRight">26dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:scaleX">1.05</item>
+        <item name="layout_constraintHeight_percent">0.2</item>
+
+    </style>
+
+    <style name="radiobuttons" parent="@style/Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:onClick">onRadioButtonClicked</item>
+        <item name="android:paddingTop">17dp</item>
+        <item name="android:paddingBottom">17dp</item>
+        <item name="android:buttonTint">@color/brown</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/choice</item>
+    </style>
+
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="user_array">
+        <item>Instructor</item>
+        <item>Student</item>
+    </string-array>
+    <string-array name="school_array">
+        <item>SUTD</item>
+        <item>ANU</item>
+    </string-array>
+</resources>

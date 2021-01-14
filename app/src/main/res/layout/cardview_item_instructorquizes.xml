@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="4dp"
+    cardview:layout_constraintHeight_percent="0.33"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:id='@+id/cardview_id'>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/instructorQuiz_title_id"
+            style="@style/Text"
+
+            android:text="@string/quiz1_text"
+            android:textColor="@color/grey"
+
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintHorizontal_bias="0.05"
+            cardview:layout_constraintStart_toStartOf="parent"
+            cardview:layout_constraintTop_toTopOf="parent"
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            cardview:layout_constraintVertical_bias="0.4"
+            />
+
+        <TextView
+            android:id="@+id/instructorQuiz_score_id"
+            style="@style/Text_Brown"
+            android:gravity="right"
+            android:textSize="12sp"
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintHorizontal_bias="0.978"
+            cardview:layout_constraintStart_toStartOf="parent"
+            cardview:layout_constraintTop_toTopOf="parent"
+            cardview:layout_constraintVertical_bias="0.9"
+            android:text="@string/score_text"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

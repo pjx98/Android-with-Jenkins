@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".InstructorQuizActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:menu="@menu/menu_main">
+
+        <TextView
+            android:id="@+id/quizTitle_id"
+            style="@style/TextCapsBold"
+            android:text="@string/quiz1_text"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/quizScore_id"
+        style="@style/Text"
+        android:text="@string/score_text"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.09"
+        app:layout_constraintHorizontal_bias="0.43"/>
+
+    <TextView
+        style="@style/Text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/description_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.14"/>
+
+    <TextView
+        android:id='@+id/quizDescription_id'
+        style="@style/cardView"
+        app:layout_constraintHeight_percent="0.1"
+        android:text="@string/description_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.19"
+        />
+
+    <TextView
+        style="@style/Text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/quizqn_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.3"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewQuestion_id"
+        style="@style/recyclerView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.53"/>
+
+    <LinearLayout
+        android:id="@+id/add_delete_qns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.75"
+        android:visibility="visible">
+        <Button
+            android:id="@+id/addQuestionButton"
+            style="@style/button"
+            android:text="@string/addqn_text"
+            android:clickable="true"
+            android:layout_marginHorizontal="4dp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:text="@string/unpublishquiz_text"
+        android:id="@+id/publishQuizButton_hide"
+        style="@style/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias=".75"
+        android:visibility="gone"/>
+
+    <Button
+        android:text="@string/deletequiz_text"
+        android:id="@+id/deleteQuizButton_hide"
+        style="@style/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias=".82"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/publish_delete_quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.82"
+        android:visibility="visible">
+    <Button
+        android:id="@+id/publishQuizButton"
+        style="@style/button"
+        android:text="@string/publishquiz_text"
+        android:clickable="true"
+        android:layout_marginHorizontal="4dp"/>
+    <Button
+        android:id="@+id/deleteQuizButton"
+        style="@style/button"
+        android:text="@string/deletequiz_text"
+        android:clickable="true"
+        android:layout_marginHorizontal="4dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:text="@string/feedback_text"
+        android:id="@+id/feedbackQuizButton"
+        style="@style/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.89"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
