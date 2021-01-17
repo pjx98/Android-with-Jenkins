@@ -1,6 +1,6 @@
 # Android App with Jenkins
 
-Hello, this is an e-learning android app with CI/CD integration using Jenkins with Firebase as its database.
+Hello, this is an e-learning android app with CI/CD integration using Jenkins and Firebase as its database.
 
 
 ## Getting Started
@@ -25,11 +25,11 @@ Fork and clone from the development branch.
 
 ## Workflow
 
-Branch: Feature -> Development -> Main
+Flow: Feature -> Development -> Main
 
-The Main branch is the final build of the app where we would push to play store.
+The Main branch is the final build of the app where we would push to the play store.
 
-Development branch is where we will go through the unit tests and build the appDebug apk to test.
+Development branch is where we will go through the unit tests and build the appDebug apk to test. Once they are successful, the code will be manually pushed to the main branch.
 
 Feature branch is where each individual will work on their code in their local repository. Once they are done, they will commit and push to development branch.
 
