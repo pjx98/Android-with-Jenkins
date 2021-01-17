@@ -19,7 +19,7 @@ Fork and clone from the development branch.
 
 <img src="./App_Screenshots/Img_2.PNG">
 
-<img src="./App_Screenshots/Img_3.PNG" width = 150 >
+<img src="./App_Screenshots/Img_3.PNG" >
 
 
 
